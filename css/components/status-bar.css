@@ -1,7 +1,11 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  box-sizing: border-box;
 }
 .status-bar__column {
   width: 33%;
@@ -13,13 +17,13 @@
 
 .status-bar__column:nth-child(2) {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* 시간이 딱 중심으로 중앙에 오게*/
 }
 
 .status-bar__column:last-child {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-end; /*오른쪽 끝으로 가게*/
+  align-items: center; /*배터리 번개랑 충전률이랑 맞게 중앙에 오게*/
 }
 
 .status-bar__column .fa-battery-three-quarters {

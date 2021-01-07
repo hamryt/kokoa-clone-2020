@@ -1,0 +1,48 @@
+.nav {
+  /*밑에 아이콘들이 스크롤을 내려도 항상 아래에 붙어있게*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+
+  /*아이콘들이 padding 때매 옆으로 밀려나서 가려지는 현상을 해결함*/
+  box-sizing: border-box; /*.nav의 크기를 자동적으로 늘리지 않게함*/
+  border-top: 1px solid rgba(141, 141, 141, 0.3); /*위에 약간 얇은 선*/
+}
+.nav__list {
+  display: flex; /*바로 아래에 속해 있는 애들을 옆으로 정렬*/
+  justify-content: space-between; /*아이콘들 같은 비율로 사이 벌어지게*/
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /*가장 가까운 relative를 가진 부모 기준으로 움직인다*/
+  bottom: 15px;
+  left: 15px;
+}
+
+.nav__spot {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  position: absolute;
+  left: 30px;
+  bottom: 32px;
+}
