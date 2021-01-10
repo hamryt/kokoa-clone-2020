@@ -22,27 +22,12 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute; /*가장 가까운 relative를 가진 부모 기준으로 움직인다*/
   bottom: 15px;
   left: 15px;
 }
 
 .nav__spot {
-  background-color: tomato;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  display: flex;
-  position: absolute;
   left: 30px;
   bottom: 32px;
 }

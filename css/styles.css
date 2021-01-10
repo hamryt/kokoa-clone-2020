@@ -6,13 +6,21 @@
 @import "components/status-bar.css"; /*위에 시간이랑 와이파이쪽*/
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/spot.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 /* 글씨체 */
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
